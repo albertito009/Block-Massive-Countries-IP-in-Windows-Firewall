@@ -60,7 +60,4 @@ You can execute multiple scripts to block multiple countries. Each script will c
 After executing the scripts, you can verify that the firewall rules have been added by running the following command in PowerShell:
 ```powershell
 netsh advfirewall firewall show rule name=all
-```   
-
-
-
+```
