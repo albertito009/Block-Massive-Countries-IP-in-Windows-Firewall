@@ -13,6 +13,7 @@ This repository contains PowerShell scripts to block specific countries by addin
 ### 2. Execute scripts with GUI (Visual Mode)
 
 You can click in the file and execute with PowerShell
+
 ![Annotation 2024-06-01 031142](https://github.com/albertito009/Block-Massive-Countries-IP-in-Windows-Firewall/assets/91431288/b9a6f0be-120f-4799-88d9-6ba80d4d64d1)
 
 ### 2. Or if you want Open PowerShell with Administrative Privileges (Commands Mode)
