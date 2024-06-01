@@ -10,13 +10,20 @@ This repository contains PowerShell scripts to block specific countries by addin
 1. Download the `Countries_Scripts.zip` file from the repository.
 2. Unzip the `Countries_Scripts.zip` file to your desired directory.
 
-### 2. Execute scripts with GUI (Visual Mode)
+### 2 A. Execute scripts with GUI (Visual Mode)
 
 You can click in the file and execute with PowerShell
 
 ![Annotation 2024-06-01 031142](https://github.com/albertito009/Block-Massive-Countries-IP-in-Windows-Firewall/assets/91431288/b9a6f0be-120f-4799-88d9-6ba80d4d64d1)
 
-### 2. Or if you want Open PowerShell with Administrative Privileges (Commands Mode)
+
+### 2.1 A. Execute multiple Scripts with GUI
+
+You can execute multiple scripts if you select them before.
+
+![Annotation 2024-06-01 031822](https://github.com/albertito009/Block-Massive-Countries-IP-in-Windows-Firewall/assets/91431288/5c629b19-6940-4fe2-95f4-b9514e886c4d)
+
+### 2 B. Or if you want Open PowerShell with Administrative Privileges (Commands Mode)
 
 To ensure the scripts can modify firewall settings. Follow these steps:
 
