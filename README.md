@@ -8,7 +8,8 @@ This repository contains PowerShell scripts to block specific countries by addin
 ### 1. Download and Unzip
 
 1. Download the `Countries_Scripts.zip` file from the repository.
-2. Unzip the `Countries_Scripts.zip` file to your desired directory.
+2. Unzip the `Countries_Scripts.zip` file to your desired directory (I've worked with the downloads directory, so the scripts are tailored to that directory.).
+3. Open the `all-zones-output` folder and continue with step 2.
 
 
 ### 2. Filter by Country in the Folder and Remove the Countries Files that you want to Allow
