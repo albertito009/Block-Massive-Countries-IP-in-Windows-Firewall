@@ -10,19 +10,13 @@ This repository contains PowerShell scripts to block specific countries by addin
 1. Download the `Countries_Scripts.zip` file from the repository.
 2. Unzip the `Countries_Scripts.zip` file to your desired directory.
 
-### 2 A. GUI MODE - Execute scripts with GUI
 
-You can click in the file and execute with PowerShell
+### 2. Filter by Country in the Folder and Remove the Countries Files that you want to Allow
 
-![Annotation 2024-06-01 031142](https://github.com/albertito009/Block-Massive-Countries-IP-in-Windows-Firewall/assets/91431288/b9a6f0be-120f-4799-88d9-6ba80d4d64d1)
+![Captura de pantalla 2024-06-02 024947](https://github.com/albertito009/Block-Massive-Countries-IP-in-Windows-Firewall/assets/91431288/c72053aa-b9a4-490e-85c2-aee198fa8499)
 
-### 2.1 A. Execute multiple Scripts with GUI
 
-You can execute multiple scripts if you select them before.
-
-![Annotation 2024-06-01 031822](https://github.com/albertito009/Block-Massive-Countries-IP-in-Windows-Firewall/assets/91431288/5c629b19-6940-4fe2-95f4-b9514e886c4d)
-
-### 2 B. NO GUI MODE - Open PowerShell with Administrative Privileges
+### 3. Open PowerShell with Administrative Privileges
 
 To ensure the scripts can modify firewall settings. Follow these steps:
 
@@ -30,30 +24,22 @@ To ensure the scripts can modify firewall settings. Follow these steps:
 2. Type `PowerShell`.
 3. Right-click on `Windows PowerShell` and select `Run as administrator`.
 
-(Administrative Privileges it's optional, each file contains to open the script with administrator.)
-
-### 3. Navigate to the Unzipped Directory
+### 4. Navigate to the Unzipped Directory
 
 In the PowerShell window, navigate to the directory where you unzipped the files. For example:
 
 ```powershell
 cd C:\Path\To\Unzipped\Files
 ```
-### 4. Execute the Desired Scripts
 
-To block a specific country, execute the corresponding PowerShell script. For example, to block Spain, run:
-
-```powershell
-.\Spain.ps1
-```
-
-You can execute multiple scripts to block multiple countries. Each script will create a firewall rule to block incoming traffic from the specified country's IP ranges.
+### 5. Execute the Script with Administrative Privileges
 
 ```powershell
-.\Spain.ps1
-.\Germany.ps1
-.\France.ps1
+.\ExecuteFilesFolder.ps1
 ```
+
+![Captura de pantalla 2024-06-02 025818](https://github.com/albertito009/Block-Massive-Countries-IP-in-Windows-Firewall/assets/91431288/7b4d0f20-47fd-481d-a3b2-94d6338b0c82)
+
 
 ### 6. Verifying the Firewall Rules
 
@@ -61,3 +47,16 @@ After executing the scripts, you can verify that the firewall rules have been ad
 ```powershell
 netsh advfirewall firewall show rule name=all
 ```
+
+### 7. Remove X Firewall Rules
+
+You can remove X rules selecting them in the Windows Defender Firewall with Advanced Security
+
+![Captura de pantalla 2024-06-02 025354](https://github.com/albertito009/Block-Massive-Countries-IP-in-Windows-Firewall/assets/91431288/05cf7abb-e769-450e-bc4b-221bed097e33)
+
+If you don't have a GUI, you can remove it with this command. I recommend you do a script to automate the removal of rules for countries
+
+```powershell
+netsh advfirewall firewall delete rule name="Deny_IP_Germany1"
+```
+
